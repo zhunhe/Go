@@ -31,3 +31,6 @@ echo "filetype plugin indent on" >> ~/.vimrc
 mkdir -p ~/.vim/bundle
 cd ~/.vim/bundle
 git clone https://github.com/fatih/vim-go.git
+source ~/.bashrc
+cd
+echo -e "\033[32;1m"🦆완료! vim에서:GoInstallBinaries 실행해주세요!"\033[m"
