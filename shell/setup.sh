@@ -1,4 +1,5 @@
 #!/bin/bash
+#Ubuntu 18.04.05 확인완료
 # oh-my-bash 설치
 echo -e "\033[32;1m"🦆oh-my-bash 설치"\033[m"
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
@@ -9,6 +10,7 @@ sed -i "s/OSH_THEME=\"font\"/OSH_THEME=\"powerline\"/g" ~/.bashrc
 echo -e "\033[32;1m"🦆.bash_profile 설정"\033[m"
 echo "export GOROOT=/usr/local/go" > ~/.bash_profile
 echo "export GOPATH=$HOME/go" >> ~/.bash_profile
+echo "export PATH=$GOROOT/bin:$PATH" >> ~/.bash_profile
 echo "source ~/.bashrc" >> ~/.bash_profile
 source ~/.bashrc
 # jellybeans 설치
