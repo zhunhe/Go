@@ -20,11 +20,11 @@ boj 1259번: 팰린드롬수
 각 줄마다 주어진 수가 팰린드롬수면 'yes', 아니면 'no'를 출력한다.
 */
 
-package palindrome
+package main
 
 import "fmt"
 
-func palindrome(s string) bool {
+func CheckPalindrome(s string) bool {
 	for i := 0; i <= len(s)/2; i++ {
 		if s[i] != s[len(s)-1-i] {
 			return false
@@ -40,8 +40,8 @@ func main() {
 		if s == "0" {
 			return
 		}
-		result := palindrome(s)
-		if result {
+		isPalindrome := CheckPalindrome(s)
+		if isPalindrome {
 			fmt.Println("yes")
 		} else {
 			fmt.Println("no")
